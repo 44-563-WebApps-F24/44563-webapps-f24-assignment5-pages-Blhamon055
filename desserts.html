@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desserts.html</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <style>
+        .table thead th {
+            background-color: #343a40;
+            color: white;
+        }
+        .table {
+            border: 2px solid #dee2e6; 
+            
+        }
+        .table-container {
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; 
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="desserts.html">Dessert options</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="basic.html">Basic!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advanced.html">Advanced!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <h1>After dinner hosted by Braeden Lhamon</h1>
+    <div class="flex-container"></div>
+        <div class="row">
+            <div class="col-sm-2">L</div>
+            <div class="col-sm-2">H</div>
+            <div class="col-sm-2">A</div>
+            <div class="col-sm-2">M</div>
+            <div class="col-sm-2">O</div>
+            <div class="col-sm-2">N</div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md">Lemon Tart</div>
+            <div class="col-md">Honey Cake</div>
+            <div class="col-md">Apple Pie</div>
+            <div class="col-md">Macarons</div>
+            <div class="col-md">Oreo Cheesecake</div>
+            <div class="col-md">Nougat</div>
+        </div>
+    <p>The Dessert names break first and are listed vertically 
+        before the letters of my last name. These break first 
+        because 'col-md' specifies the break point when the
+        formatting changes. The medium size can't fit before
+        small sizing.</p>
+
+        <div class="image-container">
+            <img src="lemon_tart.jpg" class="img-fluid"  width="400" height="500" alt="Image of Lemon Tart">
+            <img src="apple_pie.jpeg" class="img-fluid" alt="Image of Apple Pie">
+            <img src="macarons.jpeg" class="img-fluid" alt="Image of Macarons">
+        </div>
+
+        <div class="thumbnail-container"></div>
+            <img src="lemon_tart.jpg" class="img-thumbnail" width="200" height="200" alt="Image of Lemon Tart">
+            <img src="apple_pie.jpeg" class="img-thumbnail" width="200" height="200" alt="Image of Apple Pie">
+            <img src="macarons.jpeg" class="img-thumbnail" width="200" height="200" alt="Image of Macarons">
+        </div>
+
+        <table class="table table-striped table-bordered table-hover table-striped table-sm">
+            <caption>This is a table that lists a dessert, a city, and an insect for each letter of my last name!</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Letter</th>
+                    <th scope="col">Dessert</th>
+                    <th scope="col">City</th>
+                    <th scope="col">Insect</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">L</th>
+                    <td>Lemon Tart</td>
+                    <td>Lexington</td>
+                    <td>Ladybug</td>
+                </tr>
+                <tr>
+                    <th scope="row">H</th>
+                    <td>Honey Cake</td>
+                    <td>Helsinki</td>
+                    <td>Hornet</td>
+                </tr>
+                <tr class="table-warning">
+                    <th scope="row">A</th>
+                    <td>Apple Pie</td>
+                    <td>Athens</td>
+                    <td>Ant</td>
+                </tr>
+                <tr>
+                    <th scope="row">M</th>
+                    <td>Macarons</td>
+                    <td>Madrid</td>
+                    <td>Moth</td>
+                </tr>
+                <tr>
+                    <th scope="row">O</th>
+                    <td>Oreo Cheesecake</td>
+                    <td>Orlando</td>
+                    <td>Orchid Mantis</td>
+                </tr>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>Nougat</td>
+                    <td>New York</td>
+                    <td>Net-winged Beetle</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="text-center">Button Groups for Letters</h2>    
+    <div class="btn-toolbar justify-content-center" role="toolbar">
+        
+        <div class="btn-group me-2" role="group">
+            <button type="button" class="btn btn-success">L</button>
+            <button type="button" class="btn btn-success">A</button>
+            <button type="button" class="btn btn-success">M</button>
+        </div>
+
+        <div class="btn-group me-2" role="group">
+            <button type="button" class="btn btn-warning">H</button>
+            <button type="button" class="btn btn-warning">O</button>
+        </div>
+
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-danger">N</button>
+        </div>
+    </div>
+
+    <div class="dropdown"></div>
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Select a page to go to!
+        </button>
+
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="basic.html">Basic!</a>
+            <a class="dropdown-item" href="advanced.html">Advanced!</a>
+        </div>
+    </div>
+
+
+    <div>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="dessert" class="form-label">Dessert:</label>
+                <input type="text" class="form-control" id="dessert" placeholder="Enter your dessert">
+            </div>
+
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="check1">
+                <label class="form-check-label" for="check1">Sign up for newsletter?</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit!</button>
+        </form>
+    </div>
+</body>
+</html>
